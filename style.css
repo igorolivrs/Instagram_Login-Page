@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #fafafa;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 86vh;
+}
+
+#phone-container{
+    background: url(./Images/Phones/phone.png) no-repeat bottom;
+    position: relative;
+    height: 650px;
+    width: 400px;
+    margin-right: 32px;
+}
+
+.carousel{
+    float: right;
+    right: 26px;
+    top: 40px;
+    position: absolute;
+}
+
+.carousel-photo{
+    animation: opacity 8s;
+    transition: 1.5s ease;
+}
+
+@keyframes opacity{
+    0% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-width: 275px;
+    width: 352px;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+.group2{
+    padding: 20px;
+}
+
+.photo-logo{
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+
+.photo-perfil{
+    display: block;
+    align-self: center;
+    overflow: hidden;
+    border: solid 1px #efefef;
+    border-radius: 100px;
+    width: 84px;
+    height: 84px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+.photo-perfil img{
+    height: 6.5rem;
+}
+
+.login{
+    background-color: #0095f6;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 5px 9px;
+    font-weight: 600;
+    min-width: 120px;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+
+}
+
+.logout{
+    color: #0095f6;
+    line-height: 13px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.link{
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.not-account{
+    color: rgb(160, 160, 160);
+    margin-bottom: 4px;
+}
+
+.get-the-app{
+    height: 100px;
+}
+
+.get-the-app p{
+    padding: 12px 0;
+}
+
+.get-the-app .buttons img{
+    width: 130px;
+    margin: 10px 0 10px 0;
+}
+
+.btn-ios{
+    margin-right: 5px;
+}
+
+footer{
+    color: #8e8e8e;
+    min-width: 280px;
+    line-height: 16px;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;      
+}
+
+footer li{
+    margin: 4px 8px;
+}
+
+footer a{
+    color: #8e8e8e;
+    text-align: center;
+    font-size: 12px;
+}
+
+li.select-language{
+    position: relative;
+    width: auto;
+    margin-top: 12px;
+} 
+
+.current-language{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.copyright{
+    font-size: 12px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+select{
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+.by{
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Media Queries */
+/* Extra small devices */
+@media (max-width: 575.98px){
+    #phone-container{
+        display: none;
+    }
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767.98px){
+    #phone-container{
+        display: none;
+    }
+}
+    
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 991.98px){
+    #phone-container{
+        display: none;
+    }
+}
